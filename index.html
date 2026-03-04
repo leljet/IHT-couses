@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="/Fonts/" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>IHT-courses</title>
+  </head>
+  <body>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <div class="hero">
+      <header>
+        <nav>
+          <div class="inner-content">
+            <div class="logo">
+              <img src="/img/logo/Iht-logo.svg" alt="" />
+            </div>
+
+            <div class="burger" id="burger">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+              <li>
+                <a href="#headerContentTitle" data-i18n="home">Главная</a>
+              </li>
+              <li><a href="#pictures" data-i18n="shop">Магазин</a></li>
+              <li>
+                <a href="#descriptionTitle" data-i18n="aboutNav">О </a>
+              </li>
+              <li><a href="#about-us" data-i18n="contact">Контакты</a></li>
+              <li>
+                <select class="langSwitcher" id="langSwitcher">
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                  <option value="uz">UZ</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-content2">
+            <ul>
+              <li>
+                <a href="">Поступление</a>
+              </li>
+              <li>
+                <a href="">Обучение</a>
+              </li>
+              <li>
+                <a href="">Стоимость</a>
+              </li>
+              <li>
+                <a href="">Условия</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <header class="scroll-header">
+          <div class="scroll-inner">
+            <!-- <div class="logo">
+              <img src="/img/logo/Iht-logo.svg" alt="" />
+            </div> -->
+
+            <ul class="scroll-nav">
+              <li><a href="#">Поступление</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Стоимость</a></li>
+              <li><a href="#">Условия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <a href="#" class="scroll-btn">Записаться</a>
+          </div>
+        </header>
+
+        <div class="header-content">
+          <model-viewer
+            src="logoV2.glb"
+            camera-controls
+            auto-rotate
+            disable-tap
+            disable-pan
+            disable-zoom
+            field-of-view="50deg"
+            camera-orbit="0deg 75deg 8m"
+            min-camera-orbit="auto auto 2m"
+            max-camera-orbit="auto auto 60m"
+          >
+          </model-viewer>
+
+          <div class="header-content-text">
+            <!-- <h1 data-i18n="headerContentTitle" id="headerContentTitle">
+             
+            </h1> -->
+            <img src="/img/logo.svg" alt="" />
+
+            <a href="#" class="premium-btn">
+              <span>Записаться на подкурсы</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="Counter_container">
+      <section class="stats">
+        <div class="stat">
+          <h2 class="counter" data-target="99">0</h2>
+          <p>ПОСТУПЛЕНИЯ В ВУЗ</p>
+        </div>
+
+        <div class="stat">
+          <h2 class="counter" data-target="57">0</h2>
+          <p>В НАЦИОНАЛЬНЫЕ ВУЗЫ</p>
+        </div>
+
+        <div class="stat">
+          <h2 class="counter" data-target="43">0</h2>
+          <p>В ЗАРУБЕЖНЫЕ ВУЗЫ</p>
+        </div>
+
+        <div class="stat">
+          <h2 class="counter" data-target="7">0</h2>
+          <p>НАПРАВЛЕНИЙ ОБУЧЕНИЯ</p>
+        </div>
+
+        <div class="stat">
+          <h2 class="counter" data-target="24">0</h2>
+          <p>КОЛИЧЕСТВО ГОСУДАРСТВ</p>
+        </div>
+
+        <div class="stat">
+          <h2 class="counter" data-target="14">0</h2>
+          <p>ИНОСТРАННЫЕ ГРАЖДАНЕ</p>
+        </div>
+      </section>
+    </div>
+    <script src="/js/counter.js"></script>
+
+    <section class="description">
+      <section class="features">
+        <h2>Обучение у нас — это...</h2>
+
+        <div class="cards">
+          <div class="card light">
+            <div class="card-content">
+              <h3>Высококачественное образование</h3>
+              <p>
+                Занимаем ведущие позиции в рейтинге образовательной системы
+                Узбекистана
+              </p>
+              <p>Программы, ориентированные на глобальные стандарты качества</p>
+              <p>Лекции преподавателей ведущих иностранных ВУЗов</p>
+            </div>
+          </div>
+
+          <div class="card accent">
+            <h3>Инновационная образовательная среда</h3>
+            <div class="row">
+              <span>WI-FI зона</span>
+              <span>Ежегодная модернизация лицея</span>
+            </div>
+          </div>
+
+          <div class="card light">
+            <h3>Комфортные условия</h3>
+            <div class="row">
+              <span>Окружение мотивирующих друзей</span>
+              <span>Насыщенная программа мероприятий</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <div class="titleOfSecondSlider">
+      <div class="separator"></div>
+      <h3 data-i18n="titleOfSecond">teachers</h3>
+    </div>
+    <section class="teachers-slider">
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="teacher-card active">
+            <img src="teacher1.jpg" />
+            <div class="overlay">
+              <h2>Иван Петров</h2>
+              <p>Математика</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher2.jpg" />
+            <div class="overlay">
+              <h2>Анна Смирнова</h2>
+              <p>Английский язык</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher3.jpg" />
+            <div class="overlay">
+              <h2>Алексей Иванов</h2>
+              <p>Физика</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher4.jpg" />
+            <div class="overlay">
+              <h2>Мария Соколова</h2>
+              <p>Химия</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher5.jpg" />
+            <div class="overlay">
+              <h2>Дмитрий Кузнецов</h2>
+              <p>Биология</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher6.jpg" />
+            <div class="overlay">
+              <h2>Екатерина Орлова</h2>
+              <p>История</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher7.jpg" />
+            <div class="overlay">
+              <h2>Никита Волков</h2>
+              <p>Информатика</p>
+            </div>
+          </div>
+
+          <div class="teacher-card">
+            <img src="teacher8.jpg" />
+            <div class="overlay">
+              <h2>Ольга Романова</h2>
+              <p>Литература</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots"></div>
+    </section>
+
+    <section class="video-container">
+      <!-- <iframe
+        width="80%"
+        height="500px"
+        src="https://www.youtube.com/embed/76ZMZRYisNY?si=dMn2bJfXdAYOX0yW"
+      >
+      </iframe>
+      <iframe
+        width="80%"
+        height="500px"
+        src="https://www.youtube.com/embed/MQh4AzHGZkc?si=u2jKJarjHuB22VLs"
+      >
+      </iframe> -->
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="introduction">
+        <div class="separator"></div>
+        <h3 data-i18n="contactWithUsTitle">Свяжитесь с нами</h3>
+        <p data-i18n="contactWithUsDesc">
+          Данный информационный блок содержит полные контактные данные нашей
+          компании, включая номера телефонов, почтовый адрес, адрес электронной
+          почты, а также ссылку на карту с указанием местоположения.
+        </p>
+      </div>
+      <div class="about-us-page">
+        <div class="information">
+          <div class="card_icon">
+            <div class="icon"><img src="img/logo/message.png" alt="" /></div>
+            <div class="info">
+              <h2 data-i18n="email">Эл.письмо:</h2>
+              <p>dilyasaydumarova@gmail.com</p>
+            </div>
+          </div>
+          <div class="card_icon">
+            <div class="icon"><img src="img/logo/phone.png" alt="" /></div>
+            <div class="info">
+              <h2 data-i18n="phoneNumber">Позвоните нам:</h2>
+              <p>+998 (91) 106-97-37</p>
+            </div>
+          </div>
+          <div class="card_icon">
+            <div class="icon"><img src="img/logo/location.png" alt="" /></div>
+            <div class="info">
+              <h2 data-i18n="address">АДРЕС:</h2>
+              <p data-i18n="addressV">Город Фаргона, ул. Кувачой дом 240А</p>
+            </div>
+          </div>
+        </div>
+        <iframe
+          width="50%"
+          height="100%"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=40.414274,71.776712&z=14&output=embed"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <footer></footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollHeader = document.querySelector(".scroll-header");
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", function () {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > 100 && currentScroll > lastScroll) {
+      scrollHeader.classList.add("active");
+    } else {
+      scrollHeader.classList.remove("active");
+    }
+
+    lastScroll = currentScroll;
+  });
+});
+</script>
+    
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/teachers_slider.js"></script>
+  </body>
+</html>
