@@ -10,6 +10,69 @@ body {
   background-color: #0b1440;
 }
 
+.loader-wrapper{
+  position:fixed;
+  inset:0;
+  background:#0f172a;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+}
+
+.loader-container{
+  position:relative;
+  width:140px;
+  height:140px;
+}
+
+.loader-ring{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+
+  background:conic-gradient(
+    #6366f1,
+    #22c55e,
+    #06b6d4,
+    #6366f1
+  );
+
+  animation:rotate 2s linear infinite;
+
+  filter:blur(1px);
+}
+
+.loader-ring::before{
+  content:"";
+  position:absolute;
+  inset:10px;
+
+  background:#0f172a;
+  border-radius:50%;
+}
+
+.loader-text{
+  position:absolute;
+  inset:0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:28px;
+  color:white;
+  font-weight:600;
+}
+
+@keyframes rotate{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
 .hero {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   margin: 0;

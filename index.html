@@ -24,19 +24,22 @@
     <title>IHT-courses</title>
   </head>
   <body>
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
+    <div class="loader-wrapper">
+      <div class="loader-container">
+        <div class="loader-ring"></div>
+
+        <div class="loader-text"><span id="percent">0</span>%</div>
+      </div>
+    </div>
     <div class="hero">
       <header>
         <nav>
           <div class="inner-content">
             <div class="logo">
               <img src="img/logo/Iht-logo.svg" alt="" />
-            </div>     
-      
-            <div class="burger" style="color: white;" id="burger">☰</div>
+            </div>
+
+            <div class="burger" style="color: white" id="burger">☰</div>
 
             <ul class="nav-links" id="nav-links">
               <li>
@@ -212,49 +215,45 @@
       <h3 data-i18n="titleOfSecond">teachers</h3>
     </div>
 
-<section class="teachers-slider">
+    <section class="teachers-slider">
+      <button class="nav prev">‹</button>
 
-  <button class="nav prev">‹</button>
+      <div class="slider-track">
+        <div class="teacher-card">
+          <img src="teacher1.jpg" />
+          <div class="over">
+            <h2>Алексей Викторович</h2>
+            <p>Математика</p>
+          </div>
+        </div>
 
-  <div class="slider-track">
+        <div class="teacher-card">
+          <img src="teacher2.jpg" />
+          <div class="over">
+            <h2>Мисс Зиёда</h2>
+            <p>Английский язык</p>
+          </div>
+        </div>
 
-    <div class="teacher-card">
-      <img src="teacher1.jpg">
-      <div class="over">
-        <h2>Алексей Викторович</h2>
-        <p>Математика</p>
+        <div class="teacher-card">
+          <img src="teacher3.jpg" />
+          <div class="over">
+            <h2>Алексей Иванов</h2>
+            <p>Физика</p>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <img src="teacher4.jpg" />
+          <div class="over">
+            <h2>Мария Соколова</h2>
+            <p>Химия</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="teacher-card">
-      <img src="teacher2.jpg">
-      <div class="over">
-        <h2>Мисс Зиёда</h2>
-        <p>Английский язык</p>
-      </div>
-    </div>
-
-    <div class="teacher-card">
-      <img src="teacher3.jpg">
-      <div class="over">
-        <h2>Алексей Иванов</h2>
-        <p>Физика</p>
-      </div>
-    </div>
-
-    <div class="teacher-card">
-      <img src="teacher4.jpg">
-      <div class="over">
-        <h2>Мария Соколова</h2>
-        <p>Химия</p>
-      </div>
-    </div>
-
-  </div>
-
-  <button class="nav next">›</button>
-
-</section>
+      <button class="nav next">›</button>
+    </section>
 
     <section class="video-container">
       <!-- <iframe
@@ -338,7 +337,12 @@
         });
       });
     </script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"
+    ></script>
 
+    <script src="js/loader.js"></script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -362,4 +366,3 @@
     <script type="text/javascript" src="js/slick.js"></script>
   </body>
 </html>
-
