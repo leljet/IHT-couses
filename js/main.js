@@ -28,7 +28,7 @@ const translations = {
     email: "Эл.письмо:",
     phoneNumber: "Позвоните нам:",
     address: "АДРЕС:",
-    addressV: "Город Фаргона, ул. Кувачой дом 240А",
+    addressV: "Город Ташкент, Кары-Ниязи 39а",
     titleOfSecond: "Преподаватели"
   },
   en: {
@@ -52,7 +52,7 @@ const translations = {
     email: "E-Mail:",
     phoneNumber: "Call To Us:",
     address: "Address:",
-    addressV: "Fargona city, Kuvachoy street, house 240A",
+    addressV: "Tashkent City, Karaniazi39a",
     titleOfSecond: "Teachers"
   },
   uz: {
@@ -72,7 +72,7 @@ const translations = {
     email: "Elektron pochta:",
     phoneNumber: "Telefon:",
     address: "MANZIL:",
-    addressV: "Farg‘ona shahri, Kuvochoy ko‘chasi, 240A-uy",
+    addressV: "Taskent shahri, Karaniazi 39a",
     titleOfSecond: "o'qituvchilar"
   },
 };

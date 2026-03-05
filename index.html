@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="stylesheet" href="/Fonts/" />
+
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" href="/Fonts/" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
@@ -32,9 +34,9 @@
           <div class="inner-content">
             <div class="logo">
               <img src="img/logo/Iht-logo.svg" alt="" />
-            </div>
-
-            <div class="burger" id="burger">☰</div>
+            </div>     
+      
+            <div class="burger" style="color: white;" id="burger">☰</div>
 
             <ul class="nav-links" id="nav-links">
               <li>
@@ -78,7 +80,7 @@
         <header class="scroll-header">
           <div class="scroll-inner">
             <!-- <div class="logo">
-              <img src="img/logo/Iht-logo.svg" alt="" />
+              <img src="/img/logo/Iht-logo.svg" alt="" />
             </div> -->
 
             <ul class="scroll-nav">
@@ -112,7 +114,7 @@
             <!-- <h1 data-i18n="headerContentTitle" id="headerContentTitle">
              
             </h1> -->
-            <img src="img/logo.svg" alt="" />
+            <img src="/img/logo.svg" alt="" />
 
             <a href="#" class="premium-btn">
               <span>Записаться на подкурсы</span>
@@ -124,8 +126,8 @@
     <div class="Counter_container">
       <section class="stats">
         <div class="stat">
-          <h2 class="counter" data-target="99">0</h2>
-          <p>ПОСТУПЛЕНИЯ В ВУЗ</p>
+          <h2 class="counter" data-target="80">0</h2>
+          <p>ПОСТУПЛЕНИЯ В ЛИЦЕИ</p>
         </div>
 
         <div class="stat">
@@ -139,7 +141,7 @@
         </div>
 
         <div class="stat">
-          <h2 class="counter" data-target="7">0</h2>
+          <h2 class="counter" data-target="3">0</h2>
           <p>НАПРАВЛЕНИЙ ОБУЧЕНИЯ</p>
         </div>
 
@@ -154,13 +156,26 @@
         </div>
       </section>
     </div>
-    <script src="js/counter.js"></script>
 
     <section class="description">
       <section class="features">
         <h2>Обучение у нас — это...</h2>
 
         <div class="cards">
+          <!-- <model-viewer
+            class="kubik"
+            src="graduation.glb"
+            camera-controls
+            auto-rotate
+            disable-tap
+            disable-pan
+            disable-zoom
+            field-of-view="60deg"
+            camera-orbit="0deg 75deg 100m"
+            min-camera-orbit="auto auto 2m"
+            max-camera-orbit="auto auto 30m"
+          >
+          </model-viewer> -->
           <div class="card light">
             <div class="card-content">
               <h3>Высококачественное образование</h3>
@@ -192,82 +207,54 @@
       </section>
     </section>
 
-
     <div class="titleOfSecondSlider">
       <div class="separator"></div>
       <h3 data-i18n="titleOfSecond">teachers</h3>
     </div>
-    <section class="teachers-slider">
-      <div class="slider-container">
-        <div class="slider-track">
-          <div class="teacher-card active">
-            <img src="teacher1.jpg" />
-            <div class="overlay">
-              <h2>Иван Петров</h2>
-              <p>Математика</p>
-            </div>
-          </div>
 
-          <div class="teacher-card">
-            <img src="teacher2.jpg" />
-            <div class="overlay">
-              <h2>Анна Смирнова</h2>
-              <p>Английский язык</p>
-            </div>
-          </div>
+<section class="teachers-slider">
 
-          <div class="teacher-card">
-            <img src="teacher3.jpg" />
-            <div class="overlay">
-              <h2>Алексей Иванов</h2>
-              <p>Физика</p>
-            </div>
-          </div>
+  <button class="nav prev">‹</button>
 
-          <div class="teacher-card">
-            <img src="teacher4.jpg" />
-            <div class="overlay">
-              <h2>Мария Соколова</h2>
-              <p>Химия</p>
-            </div>
-          </div>
+  <div class="slider-track">
 
-          <div class="teacher-card">
-            <img src="teacher5.jpg" />
-            <div class="overlay">
-              <h2>Дмитрий Кузнецов</h2>
-              <p>Биология</p>
-            </div>
-          </div>
-
-          <div class="teacher-card">
-            <img src="teacher6.jpg" />
-            <div class="overlay">
-              <h2>Екатерина Орлова</h2>
-              <p>История</p>
-            </div>
-          </div>
-
-          <div class="teacher-card">
-            <img src="teacher7.jpg" />
-            <div class="overlay">
-              <h2>Никита Волков</h2>
-              <p>Информатика</p>
-            </div>
-          </div>
-
-          <div class="teacher-card">
-            <img src="teacher8.jpg" />
-            <div class="overlay">
-              <h2>Ольга Романова</h2>
-              <p>Литература</p>
-            </div>
-          </div>
-        </div>
+    <div class="teacher-card">
+      <img src="teacher1.jpg">
+      <div class="over">
+        <h2>Алексей Викторович</h2>
+        <p>Математика</p>
       </div>
+    </div>
 
-      <div class="dots"></div>
-    </section>
+    <div class="teacher-card">
+      <img src="teacher2.jpg">
+      <div class="over">
+        <h2>Мисс Зиёда</h2>
+        <p>Английский язык</p>
+      </div>
+    </div>
+
+    <div class="teacher-card">
+      <img src="teacher3.jpg">
+      <div class="over">
+        <h2>Алексей Иванов</h2>
+        <p>Физика</p>
+      </div>
+    </div>
+
+    <div class="teacher-card">
+      <img src="teacher4.jpg">
+      <div class="over">
+        <h2>Мария Соколова</h2>
+        <p>Химия</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="nav next">›</button>
+
+</section>
 
     <section class="video-container">
       <!-- <iframe
@@ -300,21 +287,21 @@
             <div class="icon"><img src="img/logo/message.png" alt="" /></div>
             <div class="info">
               <h2 data-i18n="email">Эл.письмо:</h2>
-              <p>dilyasaydumarova@gmail.com</p>
+              <p>interhousekatop@gmail.com</p>
             </div>
           </div>
           <div class="card_icon">
             <div class="icon"><img src="img/logo/phone.png" alt="" /></div>
             <div class="info">
               <h2 data-i18n="phoneNumber">Позвоните нам:</h2>
-              <p>+998 (91) 106-97-37</p>
+              <p>+998 (98) 101-63-62</p>
             </div>
           </div>
           <div class="card_icon">
             <div class="icon"><img src="img/logo/location.png" alt="" /></div>
             <div class="info">
               <h2 data-i18n="address">АДРЕС:</h2>
-              <p data-i18n="addressV">Город Фаргона, ул. Кувачой дом 240А</p>
+              <p data-i18n="addressV">Город Ташкент, Кары-Ниязи 39а</p>
             </div>
           </div>
         </div>
@@ -333,25 +320,25 @@
 
     <footer></footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollHeader = document.querySelector(".scroll-header");
-  let lastScroll = 0;
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollHeader = document.querySelector(".scroll-header");
+        let lastScroll = 0;
 
-  window.addEventListener("scroll", function () {
-    let currentScroll = window.scrollY;
+        window.addEventListener("scroll", function () {
+          let currentScroll = window.scrollY;
 
-    if (currentScroll > 100 && currentScroll > lastScroll) {
-      scrollHeader.classList.add("active");
-    } else {
-      scrollHeader.classList.remove("active");
-    }
+          if (currentScroll > 100 && currentScroll > lastScroll) {
+            scrollHeader.classList.add("active");
+          } else {
+            scrollHeader.classList.remove("active");
+          }
 
-    lastScroll = currentScroll;
-  });
-});
-</script>
-    
+          lastScroll = currentScroll;
+        });
+      });
+    </script>
+
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -360,14 +347,18 @@ document.addEventListener("DOMContentLoaded", function () {
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <!-- <script src="js/teachers_slider.js"></script> -->
+    <script src="js/counter.js"></script>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="js/main.js"></script>
-    <script src="js/navbar.js"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
-    <script src="js/teachers_slider.js"></script>
   </body>
 </html>
-

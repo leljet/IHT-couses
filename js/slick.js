@@ -1,17 +1,17 @@
-$('.pictures').slick({
-    infinite: true,
-    slidesToShow: 1,
-    autoplay: true,
-    speed: 500,
-    autoplaySpeed: 2000,
-    arrows: false
-  });
+const track = document.querySelector(".slider-track");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
 
-$('.pictures2').slick({
-    infinite: true,
-    slidesToShow: 2,
-    autoplay: true,
-    speed: 500,
-    autoplaySpeed: 2000,
-    arrows: false
+next.onclick = () => {
+  track.scrollBy({
+    left: 460,
+    behavior: "smooth"
   });
+};
+
+prev.onclick = () => {
+  track.scrollBy({
+    left: -460,
+    behavior: "smooth"
+  });
+};
